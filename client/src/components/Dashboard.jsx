@@ -61,7 +61,7 @@ const Dashboard = () => {
     e.preventDefault()
 
     if (newHabit.length < 3){
-      alert('New Habit should be more than 3 characters')
+      return alert('New Habit should be more than 3 characters')
     }
   
     axios.post(`/new/habit`, {name : newHabit, streak: 0})
