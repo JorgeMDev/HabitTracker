@@ -65,8 +65,9 @@ const Registration = () => {
     <div>
         <h1>Registration</h1>
         <Link to="/"  style={{color: 'red', margin: "5%"}}>Home</Link>
-
+        
         <form onSubmit={handleSubmit}>
+            <div className='container'>
             <div>
                 <label name="firstName">First Name:</label>
                 <input type='text' onChange={(e)=>SetFirstName(e.target.value)}/>
@@ -86,6 +87,7 @@ const Registration = () => {
             <div >
                 <label name="password" className='confirm'>Confirm Password:</label>
                 <input type='password' onChange={(e)=>SetConfirmPass(e.target.value)}/>
+            </div>
             </div>
             <button className='btn' type='submit'>Submit</button>
         </form>
